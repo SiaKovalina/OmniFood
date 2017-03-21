@@ -68,7 +68,23 @@ $(function() {
         }
     });
     
+    /*Map*/
+    var map = new GMaps({
+  div: '.map',
+  lat: 38.7437396,
+  lng: -9.1, //by reducing this we can move the map to the left inside the container
+  zoom: 12,
+});
     
+    
+    map.addMarker({
+  lat: 38.7437396,
+  lng: -9.2302446,
+  title: 'Lisbon',
+  infoWindow: {
+  content: '<p>Our Lisbon Headquarters</p>'
+  }
+});
     
     
     
